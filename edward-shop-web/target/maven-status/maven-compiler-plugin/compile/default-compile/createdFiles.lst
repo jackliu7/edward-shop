@@ -1,0 +1,6 @@
+com\edward\shop\controller\GoodsController.class
+com\edward\shop\controller\UploadController.class
+com\edward\shop\controller\TypeTemplateController.class
+com\edward\service\UserDetailsServiceImpl.class
+com\edward\shop\controller\ItemCatController.class
+com\edward\shop\controller\SellerController.class

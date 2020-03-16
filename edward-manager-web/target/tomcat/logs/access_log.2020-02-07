@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [07/Feb/2020:20:29:12 +0800] "GET /brand/findAll.do HTTP/1.1" 500 13336 http-bio-9101-exec-1 4974
+0:0:0:0:0:0:0:1 - - [07/Feb/2020:20:33:59 +0800] "GET /brand/findAll.do HTTP/1.1" 500 4096 http-bio-9101-exec-1 1376
+0:0:0:0:0:0:0:1 - - [07/Feb/2020:20:36:07 +0800] "GET /brand/findAll.do HTTP/1.1" 500 13336 http-bio-9101-exec-1 5425
+0:0:0:0:0:0:0:1 - - [07/Feb/2020:20:37:03 +0800] "GET /brand/findAll.do HTTP/1.1" 500 13336 http-bio-9101-exec-3 3030
+0:0:0:0:0:0:0:1 - - [07/Feb/2020:20:40:24 +0800] "GET /brand/findAll.do HTTP/1.1" 200 908 http-bio-9101-exec-1 3123

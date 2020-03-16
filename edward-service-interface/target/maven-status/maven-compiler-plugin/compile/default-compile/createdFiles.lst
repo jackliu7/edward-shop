@@ -1,0 +1,17 @@
+com\edward\service\GoodsDescService.class
+com\edward\service\ItemSearchService.class
+com\edward\service\ContentCategoryService.class
+com\edward\service\SellerService.class
+com\edward\service\TypeTemplateService.class
+com\edward\service\SpecificationOptionService.class
+com\edward\service\ContentService.class
+com\edward\service\AddressService.class
+com\edward\service\GoodsService.class
+com\edward\service\CartService.class
+com\edward\service\OrderService.class
+com\edward\service\UserService.class
+com\edward\service\BrandService.class
+com\edward\service\ItemService.class
+com\edward\service\ItemCatService.class
+com\edward\service\ItemPageService.class
+com\edward\service\SpecificationService.class
