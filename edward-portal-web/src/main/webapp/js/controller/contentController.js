@@ -1,4 +1,4 @@
-app.controller("contentController",function($scope,contentService){
+app.controller("contentController",function($scope,contentService,loginService){
 	$scope.contentList = [];
 	// 根据分类ID查询广告的方法:
 	$scope.findByCategoryId = function(categoryId){
@@ -11,5 +11,15 @@ app.controller("contentController",function($scope,contentService){
 	$scope.search=function(){
 		location.href="http://localhost:9103/search.html#?keywords="+$scope.keywords;
 	}
+
+    $scope.loginName = "";
+
+    $scope.showName=function(){
+        loginService.showName().success(
+            function(response){
+                $scope.loginName=response.loginName;
+            }
+        );
+    }
 	
 });

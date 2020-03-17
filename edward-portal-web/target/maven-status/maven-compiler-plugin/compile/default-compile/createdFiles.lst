@@ -1,2 +1,8 @@
 com\edward\portal\controller\ContentController.class
+com\edward\user\controller\LoginController.class
+com\edward\user\controller\UserController.class
+com\edward\cart\controller\AddressController.class
+com\edward\cart\controller\OrderController.class
+com\edward\user\service\UserDetailServiceImpl.class
 com\edward\portal\controller\ItemSearchController.class
+com\edward\cart\controller\CartController.class
