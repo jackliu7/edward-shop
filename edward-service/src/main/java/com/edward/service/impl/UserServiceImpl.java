@@ -3,6 +3,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import javax.jms.Destination;
 import javax.jms.JMSException;
@@ -10,6 +11,7 @@ import javax.jms.MapMessage;
 import javax.jms.Message;
 import javax.jms.Session;
 
+import com.aliyuncs.exceptions.ClientException;
 import com.edward.mapper.TbUserMapper;
 import com.edward.pojo.TbUser;
 import com.edward.pojo.TbUserExample;
@@ -27,6 +29,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 
 import entity.PageResult;
+import util.SendMessageUtil;
 
 /**
  * 服务实现层
@@ -164,11 +167,7 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private Destination smsDestination;
 	
-	@Value("${template_code}")
-	private String template_code;
-	
-	@Value("${sign_name}")
-	private String sign_name;
+
 	
 	@Override
 	public void createSmsCode(final String phone) {
@@ -178,24 +177,16 @@ public class UserServiceImpl implements UserService {
 		
 		//2.将验证码放入redis
 		redisTemplate.boundHashOps("smscode").put(phone, smscode);
-		//3.将短信内容发送给activeMQ
-		
-		jmsTemplate.send(smsDestination, new MessageCreator() {
-			
-			@Override
-			public Message createMessage(Session session) throws JMSException {
-				MapMessage message = session.createMapMessage();
-				message.setString("mobile", phone);//手机号
-				message.setString("template_code", template_code);//验证码
-				message.setString("sign_name", sign_name);//签名
-				Map map=new HashMap();
-				map.put("number", smscode);				
-				message.setString("param", JSON.toJSONString(map));
-				return message;
-			}
-		});
-		
-		
+		redisTemplate.expire("smscode", 300, TimeUnit.SECONDS);
+
+		//3.将短信内容发送给用户
+		try {
+			SendMessageUtil.sendSms(phone,smscode);
+		} catch (ClientException e) {
+			e.printStackTrace();
+		}
+
+
 	}
 
 	@Override

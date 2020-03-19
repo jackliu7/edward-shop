@@ -31,7 +31,7 @@
     </script>
 </head>
 
-<body ng-app="pinyougou" ng-controller="itemController" ng-init="num=1;loadSku()">
+<body ng-app="pinyougou" ng-controller="itemController" ng-init="num=1;loadSku();showName()">
 
 <!--页面顶部 开始-->
 <#include "head.ftl">
@@ -101,41 +101,12 @@
 							<div class="fl price">
 								<i>¥</i>
 								<em>{{sku.price}}</em>
-								<span>降价通知</span>
 							</div>
-							<div class="fr remark">
-								<i>累计评价</i><em>612188</em>
-							</div>
+
 						</div>
-						<div class="summary-wrap">
-							<div class="fl title">
-								<i>促　　销</i>
-							</div>
-							<div class="fl fix-width">
-								<i class="red-bg">加价购</i>
-								<em class="t-gray">满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换
-购热销商品</em>
-							</div>
-						</div>
+
 					</div>
-					<div class="support">
-						<div class="summary-wrap">
-							<div class="fl title">
-								<i>支　　持</i>
-							</div>
-							<div class="fl fix-width">
-								<em class="t-gray">以旧换新，闲置手机回收  4G套餐超值抢  礼品购</em>
-							</div>
-						</div>
-						<div class="summary-wrap">
-							<div class="fl title">
-								<i>配 送 至</i>
-							</div>
-							<div class="fl fix-width">
-								<em class="t-gray">满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品</em>
-							</div>
-						</div>
-					</div>
+
 					<div class="clearfix choose">
 						<div id="specification" class="summary-wrap clearfix">
 							<#list specificationList as spec>

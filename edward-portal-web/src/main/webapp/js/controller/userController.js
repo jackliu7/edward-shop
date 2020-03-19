@@ -14,7 +14,12 @@ app.controller('userController' ,function($scope,$controller   ,userService){
 		//新增
 		userService.add($scope.entity,$scope.smscode).success(
 			function(response){
-				alert(response.message);
+				if (response.success) {
+                    location.href='index_login.html';
+				} else {
+                    alert(response.message);
+				}
+
 			}		
 		);
 	}

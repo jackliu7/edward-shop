@@ -13,32 +13,25 @@
 	<script type="text/javascript" src="js/base.js"> </script>
 	<script type="text/javascript" src="js/service/cartService.js"> </script>
 	<script type="text/javascript" src="js/controller/cartController.js"> </script>
+	<script type="text/javascript" src="js/service/loginService.js"></script>
+	<script type="text/javascript" src="js/service/addressService.js"> </script>
     
 </head>
 
-<body ng-app="pinyougou" ng-controller="cartController" ng-init="findCartList()">
+<body ng-app="pinyougou" ng-controller="cartController" ng-init="findCartList();showName()">
 	<!--head-->
 	<div class="top">
 		<div class="py-container">
 			<div class="shortcut">
 				<ul class="fl">
-					<li class="f-item">品优购欢迎您！</li>
-					<li class="f-item">请 <a href="login.html">登录</a> <span><a href="#">免费注册</a></span></li>
+					<li ng-if="loginName == ''" class="f-item">请<a href="cart_login.html".html">登录</a>　<span><a href="register.html">免费注册</a></span></li>
 				</ul>
-				<ul class="fr">
-					<li class="f-item">我的订单</li>
+				<ul class="fr" ng-if="loginName != ''">
+					<li class="f-item"><a href="home-index.html">爱德华欢迎您！{{loginName}}</a></li>
 					<li class="f-item space"></li>
-					<li class="f-item">我的品优购</li>
+					<li class="f-item"><a href="home-index.html">个人主页</a></li>
 					<li class="f-item space"></li>
-					<li class="f-item">品优购会员</li>
-					<li class="f-item space"></li>
-					<li class="f-item">企业采购</li>
-					<li class="f-item space"></li>
-					<li class="f-item">关注品优购</li>
-					<li class="f-item space"></li>
-					<li class="f-item">客户服务</li>
-					<li class="f-item space"></li>
-					<li class="f-item">网站导航</li>
+					<li class="f-item"><a href="/logout/cas">退出登录</a></li>
 				</ul>
 			</div>
 		</div>
@@ -46,15 +39,17 @@
 	<div class="cart py-container">
 		<!--logoArea-->
 		<div class="logoArea">
-			<div class="fl logo"><span class="title">购物车</span></div>
-			<div class="fr search">
-				<form class="sui-form form-inline">
-					<div class="input-append">
-						<input type="text" type="text" class="input-error input-xxlarge" placeholder="品优购自营" />
-						<button class="sui-btn btn-xlarge btn-danger" type="button">搜索</button>
-					</div>
-				</form>
-			</div>
+			<h1 style="font-size: 38px;line-height: 72px; ">爱德华商城</h1>
+			<h3>购物车</h3>
+			<!--<div class="fl logo"><span class="title">购物车</span></div>-->
+			<!--<div class="fr search">-->
+				<!--<form class="sui-form form-inline">-->
+					<!--<div class="input-append">-->
+						<!--<input type="text" type="text" class="input-error input-xxlarge" placeholder="爱德华自营" />-->
+						<!--<button class="sui-btn btn-xlarge btn-danger" type="button">搜索</button>-->
+					<!--</div>-->
+				<!--</form>-->
+			<!--</div>-->
 		</div>
 		<!--All goods-->
 		<div class="allgoods">
@@ -71,7 +66,7 @@
 				<div class="cart-item-list" ng-repeat="cart in cartList">
 					<div class="cart-shop">
 						<input type="checkbox" name="" id="" value="" />
-						<span class="shopname self">{{cart.sellerName}}  【商家ID:{{cart.sellerId}}】</span>
+						<span class="shopname self">{{cart.sellerName}} </span>
 					</div>
 					<div class="cart-body">
 						<div class="cart-list" ng-repeat="item in cart.orderItemList">
@@ -95,7 +90,6 @@
 								<li class="yui3-u-1-8"><span class="sum">{{item.totalFee}}</span></li>
 								<li class="yui3-u-1-8">
 									<a href="#none">删除</a><br />
-									<a href="#none">移到我的关注</a>
 								</li>
 							</ul>
 						</div>
@@ -113,41 +107,39 @@
 				</div>
 				<div class="option">
 					<a href="#none">删除选中的商品</a>
-					<a href="#none">移到我的关注</a>
-					<a href="#none">清除下柜商品</a>
 				</div>
 				<div class="toolbar">
 					<div class="chosed">已选择<span>{{totalValue.totalNum}}</span>件商品</div>
 					<div class="sumprice">
 						<span><em>总价（不含运费） ：</em><i class="summoney">¥{{totalValue.totalMoney.toFixed(2)}}</i></span>
-						<span><em>已节省：</em><i>-¥20.00</i></span>
+
 					</div>
 					<div class="sumbtn">
-						<a class="sum-btn" href="getOrderInfo.html" target="_blank">结算</a>
+						<a class="sum-btn" href="getOrderInfo.html">结算</a>
 					</div>
 				</div>
 			</div>
 			<div class="clearfix"></div>
-			<div class="deled">
-				<span>已删除商品，您可以重新购买或加关注：</span>
-				<div class="cart-list del">
-					<ul class="goods-list yui3-g">
-						<li class="yui3-u-1-2">
-							<div class="good-item">
-								<div class="item-msg">Apple Macbook Air 13.3英寸笔记本电脑 银色（Corei5）处理器/8GB内存</div>
-							</div>
-						</li>
-						<li class="yui3-u-1-6"><span class="price">8848.00</span></li>
-						<li class="yui3-u-1-6">
-							<span class="number">1</span>
-						</li>
-						<li class="yui3-u-1-8">
-							<a href="#none">重新购买</a>
-							<a href="#none">移到我的关注</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<!--<div class="deled">-->
+				<!--<span>已删除商品，您可以重新购买或加关注：</span>-->
+				<!--<div class="cart-list del">-->
+					<!--<ul class="goods-list yui3-g">-->
+						<!--<li class="yui3-u-1-2">-->
+							<!--<div class="good-item">-->
+								<!--<div class="item-msg">Apple Macbook Air 13.3英寸笔记本电脑 银色（Corei5）处理器/8GB内存</div>-->
+							<!--</div>-->
+						<!--</li>-->
+						<!--<li class="yui3-u-1-6"><span class="price">8848.00</span></li>-->
+						<!--<li class="yui3-u-1-6">-->
+							<!--<span class="number">1</span>-->
+						<!--</li>-->
+						<!--<li class="yui3-u-1-8">-->
+							<!--<a href="#none">重新购买</a>-->
+							<!--<a href="#none">移到我的关注</a>-->
+						<!--</li>-->
+					<!--</ul>-->
+				<!--</div>-->
+			<!--</div>-->
 			<div class="liked">
 				<ul class="sui-nav nav-tabs">
 					<li class="active">
@@ -381,8 +373,8 @@
 							<li>夺宝岛</li>
 							<li>DIY装机</li>
 							<li>延保服务</li>
-							<li>品优购E卡</li>
-							<li>品优购通信</li>
+							<li>爱德华E卡</li>
+							<li>爱德华通信</li>
 						</ul>
 					</div>
 					<div class="yui3-u-1-6">
@@ -404,8 +396,8 @@
 					<li>友情链接<span class="space"></span></li>
 					<li>关于我们</li>
 				</ul>
-				<p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100</p>
-				<p>京ICP备08001421号京公网安备110108007702</p>
+				<p>地址：武汉市江夏区藏龙岛开发区杨桥湖大道8号 邮编：430205 电话：400-618-4000 传真：010-82935100</p>
+				<p>鄂ICP备05003310号  鄂公网安备42011502000701号</p>
 			</div>
 		</div>
 	</div>

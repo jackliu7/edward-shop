@@ -14,32 +14,26 @@
 	<script type="text/javascript" src="js/base.js"> </script>
 	<script type="text/javascript" src="js/service/cartService.js"> </script>
 	<script type="text/javascript" src="js/controller/cartController.js"> </script>
-    
+	<script type="text/javascript" src="js/service/loginService.js"> </script>
+	<script type="text/javascript" src="js/service/addressService.js"> </script>
 </head>
 
-<body ng-app="pinyougou" ng-controller="cartController" ng-init="findAddressList();findCartList()">
+<body ng-app="pinyougou" ng-controller="cartController" ng-init="init()">
 	<!--head-->
 	<div class="top">
 		<div class="py-container">
 			<div class="shortcut">
 				<ul class="fl">
-					<li class="f-item">品优购欢迎您！</li>
-					<li class="f-item">请登录　<span><a href="#">免费注册</a></span></li>
+					<li ng-if="loginName == ''" class="f-item">请<a href="search_login.html".html">登录</a>　<span><a href="register.html">免费注册</a></span></li>
 				</ul>
 				<ul class="fr">
-					<li class="f-item">我的订单</li>
-					<li class="f-item space"></li>
-					<li class="f-item">我的品优购</li>
-					<li class="f-item space"></li>
-					<li class="f-item">品优购会员</li>
-					<li class="f-item space"></li>
-					<li class="f-item">企业采购</li>
-					<li class="f-item space"></li>
-					<li class="f-item">关注品优购</li>
-					<li class="f-item space"></li>
-					<li class="f-item">客户服务</li>
-					<li class="f-item space"></li>
-					<li class="f-item">网站导航</li>
+					<li  class="f-item" id="service">
+						<span ng-if="loginName != ''">爱德华欢迎您！{{loginName}}</span>
+						<ul ng-if="loginName != ''" class="service">
+							<li><a href="home-index.html">个人主页</a></li>
+							<li><a href="/logout/cas">退出登录</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -47,11 +41,12 @@
 	<div class="cart py-container">
 		<!--logoArea-->
 		<div class="logoArea">
-			<div class="fl logo"><span class="title">结算页</span></div>
+			<h1 style="font-size: 38px;line-height: 72px; ">爱德华商城</h1>
+			<h3>结算页</h3>
 			<div class="fr search">
 				<form class="sui-form form-inline">
 					<div class="input-append">
-						<input type="text" type="text" class="input-error input-xxlarge" placeholder="品优购自营" />
+						<input type="text" type="text" class="input-error input-xxlarge" placeholder="爱德华自营" />
 						<button class="sui-btn btn-xlarge btn-danger" type="button">搜索</button>
 					</div>
 				</form>
@@ -98,35 +93,35 @@
 						      		 <div class="control-group">
 									    <label class="control-label">收货人：</label>
 									    <div class="controls">
-									      <input type="text" class="input-medium">
+									      <input type="text" ng-model="newAddress.contact" class="input-medium">
 									    </div>
 									  </div>
 									   
 									   <div class="control-group">
 									    <label class="control-label">详细地址：</label>
 									    <div class="controls">
-									      <input type="text" class="input-large">
+									      <input type="text" ng-model="newAddress.address" class="input-large">
 									    </div>
 									  </div>
 									   <div class="control-group">
 									    <label class="control-label">联系电话：</label>
 									    <div class="controls">
-									      <input type="text" class="input-medium">
+									      <input type="text" ng-model="newAddress.mobile" class="input-medium">
 									    </div>
 									  </div>
-									   <div class="control-group">
-									    <label class="control-label">邮箱：</label>
-									    <div class="controls">
-									      <input type="text" class="input-medium">
-									    </div>
-									  </div>
+									   <!--<div class="control-group">-->
+									    <!--<label class="control-label">邮箱：</label>-->
+									    <!--<div class="controls">-->
+									      <!--<input type="text" class="input-medium">-->
+									    <!--</div>-->
+									  <!--</div>-->
 									   <div class="control-group">
 									    <label class="control-label">地址别名：</label>
 									    <div class="controls">
-									      <input type="text" class="input-medium">
+									      <input type="text" ng-model="newAddress.alias" class="input-medium">
 									    </div>
 									    <div class="othername">
-									    	建议填写常用地址：<a href="#" class="sui-btn btn-default">家里</a>　<a href="#" class="sui-btn btn-default">父母家</a>　<a href="#" class="sui-btn btn-default">公司</a>
+									    	<p>&nbsp;&nbsp;&nbsp;&nbsp;建议填写常用地址：家里、 父母家、 公司</p>
 									    </div>
 									  </div>
 									  
@@ -135,7 +130,7 @@
 						      	
 						      </div>
 						      <div class="modal-footer">
-						        <button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">确定</button>
+						        <button type="button" data-ok="modal" ng-click="addAddress()" class="sui-btn btn-primary btn-large">确定</button>
 						        <button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消</button>
 						      </div>
 						    </div>
@@ -338,8 +333,8 @@
 							<li>夺宝岛</li>
 							<li>DIY装机</li>
 							<li>延保服务</li>
-							<li>品优购E卡</li>
-							<li>品优购通信</li>
+							<li>爱德华E卡</li>
+							<li>爱德华通信</li>
 						</ul>
 					</div>
 					<div class="yui3-u-1-6">
@@ -361,8 +356,8 @@
 					<li>友情链接<span class="space"></span></li>
 					<li>关于我们</li>
 				</ul>
-				<p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100</p>
-				<p>京ICP备08001421号京公网安备110108007702</p>
+				<p>地址：武汉市江夏区藏龙岛开发区杨桥湖大道8号 邮编：430205 电话：400-618-4000 传真：010-82935100</p>
+				<p>鄂ICP备05003310号  鄂公网安备42011502000701号</p>
 			</div>
 		</div>
 	</div>
@@ -370,6 +365,22 @@
 <!--页面底部END-->
 
 <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#service").hover(function() {
+			$(".service").show();
+		}, function() {
+			$(".service").hide();
+		});
+		$("#shopcar").hover(function() {
+			$("#shopcarlist").show();
+		}, function() {
+			$("#shopcarlist").hide();
+		});
+
+	})
+</script>
+<script type="text/javascript" src="js/model/cartModel.js"></script>
 <script type="text/javascript" src="js/plugins/jquery.easing/jquery.easing.min.js"></script>
 <script type="text/javascript" src="js/plugins/sui/sui.min.js"></script>
 <script type="text/javascript" src="components/ui-modules/nav/nav-portal-top.js"></script>

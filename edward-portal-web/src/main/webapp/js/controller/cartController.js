@@ -1,5 +1,5 @@
 //购物车控制层
-app.controller('cartController',function($scope,cartService){
+app.controller('cartController',function($scope,cartService,loginService,addressService){
 	//查询购物车列表
 	$scope.findCartList=function(){
 		cartService.findCartList().success(
@@ -39,6 +39,22 @@ app.controller('cartController',function($scope,cartService){
 				
 			}
 		);		
+	}
+
+    $scope.newAddress={};
+	//添加收货地址
+	$scope.addAddress=function(){
+        $scope.newAddress.userId = $scope.loginName;
+		addressService.add($scope.newAddress).success(
+			function (response) {
+				if (response.success){
+                    $scope.findAddressList();
+				}else {
+                    alert(response.message);
+				}
+
+            }
+		);
 	}
 	
 	//选择地址
@@ -86,5 +102,20 @@ app.controller('cartController',function($scope,cartService){
 			}				
 		);		
 	}
+    $scope.loginName = "";
+
+    $scope.showName=function(){
+        loginService.showName().success(
+            function(response){
+                $scope.loginName=response.loginName;
+            }
+        );
+    }
+
+    $scope.init = function () {
+        $scope.findAddressList();
+        $scope.findCartList();
+        $scope.showName();
+    }
 	
 });
