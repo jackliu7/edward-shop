@@ -99,7 +99,7 @@ public class IdWorker {
                 | (datacenterId << datacenterIdShift)
                 | (workerId << workerIdShift) | sequence;
 
-        return nextId;
+        return nextId % 1000000;
     }
 
     private long tilNextMillis(final long lastTimestamp) {

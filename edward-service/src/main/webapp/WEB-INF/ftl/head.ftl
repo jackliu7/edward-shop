@@ -25,7 +25,7 @@
 			<div class="py-container">
 				<div class="yui3-g Logo">
 					<div class="yui3-u Left logoArea">
-                        <h1 style="font-size: 38px;line-height: 72px; ">爱德华商城</h1>
+                        <h1 style="font-size: 38px;line-height: 72px; "><a style="text-decoration: none;color: #444444" href="/"></h1>
 					</div>
 					<div class="yui3-u Center searchArea">
 						<div class="search">

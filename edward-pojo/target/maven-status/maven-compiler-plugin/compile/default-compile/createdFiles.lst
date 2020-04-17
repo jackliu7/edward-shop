@@ -45,6 +45,7 @@ com\edward\pojo\TbAddressExample$GeneratedCriteria.class
 com\edward\pojo\TbContentCategory.class
 com\edward\pojo\TbSellerExample$Criteria.class
 com\edward\pojo\TbContentExample$GeneratedCriteria.class
+com\edward\pojo\group\OrderVo.class
 com\edward\pojo\TbAreasExample.class
 com\edward\pojo\TbFreightTemplateExample$Criteria.class
 com\edward\pojo\TbContentExample$Criteria.class

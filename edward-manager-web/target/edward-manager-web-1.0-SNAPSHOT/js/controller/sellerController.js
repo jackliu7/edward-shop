@@ -87,4 +87,7 @@ app.controller('sellerController' ,function($scope,$controller   ,sellerService)
 			}
 		});
 	}
+
+    // 显示状态
+    $scope.status = ["未审核","审核通过","审核未通过","关闭"];
 });	

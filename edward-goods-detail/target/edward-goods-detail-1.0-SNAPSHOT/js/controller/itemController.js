@@ -66,17 +66,23 @@ app.controller("itemController",function($scope,$http){
 	$scope.addToCart=function(){
 		//alert('SKUID:'+$scope.sku.id );		
 		
-		$http.get('http://localhost:9107/cart/addGoodsToCartList.do?itemId='
+		$http.get('http://localhost:9103/cart/addGoodsToCartList.do?itemId='
 				+$scope.sku.id+'&num='+$scope.num ,{'withCredentials':true} ).success(
 					function(response){
 						if(response.success){
-							location.href='http://localhost:9107/cart.html';						
+							location.href='http://localhost:9103/cart.html';
 						}else{
 							alert(response.message);
 						}					
 					}						
 				);	
 		
+	}
+	$scope.loginName = "";
+
+	$scope.showName=function(){
+		$scope.loginName = $http.get('http://localhost:9103/login/name.do');
+
 	}
 	
 	

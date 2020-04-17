@@ -13,7 +13,7 @@ app.service('addressService',function($http){
         return  $http.post('../address/update.do',entity );
     }
     //删除
-    this.dele=function(ids){
+    this.delete=function(ids){
         return $http.get('../address/delete.do?ids='+ids);
     }
 	

@@ -2,6 +2,7 @@ package com.edward.service;
 import java.util.List;
 
 import com.edward.pojo.TbOrder;
+import com.edward.pojo.group.OrderVo;
 import entity.PageResult;
 /**
  * 服务层接口
@@ -14,7 +15,7 @@ public interface OrderService {
 	 * 返回全部列表
 	 * @return
 	 */
-	public List<TbOrder> findAll();
+	public List<OrderVo> findUserOrder(String username,String status);
 	
 	
 	/**
@@ -51,11 +52,20 @@ public interface OrderService {
 	public void delete(Long[] ids);
 
 	/**
+	 * 删除订单明细
+	 * @param orderId
+	 * @param orderItemId
+	 */
+	public void delOrderItem(Long orderId,Long orderItemId);
+
+	/**
 	 * 分页
 	 * @param pageNum 当前页 码
 	 * @param pageSize 每页记录数
 	 * @return
 	 */
 	public PageResult findPage(TbOrder order, int pageNum, int pageSize);
+
+
 	
 }

@@ -28,5 +28,13 @@ app.service('sellerService',function($http){
 	//搜索
 	this.search=function(page,rows,searchEntity){
 		return $http.post('../seller/search.do?page='+page+"&rows="+rows, searchEntity);
-	}    	
+	}
+	//获取登录用户
+	this.getLoginUser=function () {
+		return $http.get('../seller/username.do');
+    }
+    //修改密码
+    this.changePwd=function (loginUser) {
+        return $http.post('../seller/changePwd.do',loginUser);
+    }
 });

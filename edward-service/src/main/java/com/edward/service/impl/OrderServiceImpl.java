@@ -1,14 +1,14 @@
 package com.edward.service.impl;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import com.edward.mapper.TbOrderItemMapper;
 import com.edward.mapper.TbOrderMapper;
-import com.edward.pojo.TbOrder;
-import com.edward.pojo.TbOrderExample;
-import com.edward.pojo.TbOrderItem;
+import com.edward.pojo.*;
 import com.edward.pojo.group.Cart;
+import com.edward.pojo.group.OrderVo;
 import com.edward.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -32,14 +32,39 @@ public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private TbOrderMapper orderMapper;
+
+	@Autowired
+	private TbOrderItemMapper orderItemMapper;
 	
 	/**
 	 * 查询全部
 	 */
 	@Override
-	public List<TbOrder> findAll() {
-		return orderMapper.selectByExample(null);
+	public List<OrderVo> findUserOrder(String username,String status) {
+		List<OrderVo> result = new ArrayList<OrderVo>();
+		TbOrderExample example=new TbOrderExample();
+		TbOrderExample.Criteria criteria = example.createCriteria();
+		criteria.andUserIdEqualTo(username);
+		if (!"0".equals(status)){
+			criteria.andStatusEqualTo(status);
+		}
+		List<TbOrder> orderList = orderMapper.selectByExample(example);//用户所有的订单
+		//根据订单查询每个订单明细
+		for (TbOrder order : orderList){
+			System.out.println(order.getOrderId());
+			OrderVo orderVo = new OrderVo();
+			orderVo.setOrder(order);
+			TbOrderItemExample tbOrderItemExample = new TbOrderItemExample();
+			TbOrderItemExample.Criteria itemExampleCriteria = tbOrderItemExample.createCriteria();
+			itemExampleCriteria.andOrderIdEqualTo(order.getOrderId());
+			List<TbOrderItem> orderItemList = orderItemMapper.selectByExample(tbOrderItemExample);
+			orderVo.setOrderItemList(orderItemList);
+			result.add(orderVo);
+		}
+		return result;
 	}
+
+
 
 	/**
 	 * 按分页查询
@@ -57,8 +82,7 @@ public class OrderServiceImpl implements OrderService {
 	@Autowired
 	private IdWorker idWorker;
 	
-	@Autowired
-	private TbOrderItemMapper orderItemMapper;
+
 	
 	/**
 	 * 增加
@@ -132,9 +156,27 @@ public class OrderServiceImpl implements OrderService {
 			orderMapper.deleteByPrimaryKey(id);
 		}		
 	}
+
+	/**
+	 * 删除订单明细
+	 * @param orderId
+	 * @param orderItemId
+	 */
+	@Override
+	public void delOrderItem(Long orderId,Long orderItemId){
+		orderItemMapper.deleteByPrimaryKey(orderItemId);
+		TbOrderItemExample example=new TbOrderItemExample();
+		TbOrderItemExample.Criteria criteria = example.createCriteria();
+		criteria.andOrderIdEqualTo(orderId);
+		List<TbOrderItem> orderItems = orderItemMapper.selectByExample(example);
+		if (orderItems == null || orderItems.isEmpty()){
+			orderMapper.deleteByPrimaryKey(orderId);
+		}
+
+	}
 	
 	
-		@Override
+	@Override
 	public PageResult findPage(TbOrder order, int pageNum, int pageSize) {
 		PageHelper.startPage(pageNum, pageSize);
 		

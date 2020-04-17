@@ -1,5 +1,5 @@
  //控制层 
-app.controller('itemCatController' ,function($scope,$controller   ,itemCatService){	
+app.controller('itemCatController' ,function($scope,$controller   ,itemCatService,typeTemplateService){
 	
 	$controller('baseController',{$scope:$scope});//继承
 	
@@ -10,7 +10,21 @@ app.controller('itemCatController' ,function($scope,$controller   ,itemCatServic
 				$scope.list=response;
 			}			
 		);
-	}    
+	}
+
+    $scope.typeTemplate = [];
+
+	$scope.findTypeTemplateList=function(){
+        typeTemplateService.findAll().success(
+        	function (response) {
+        		$scope.typeTemplateList = response;
+                for(var i=0;i<response.length;i++){
+                    $scope.typeTemplate[response[i].id] = response[i].name;
+                }
+
+            }
+		);
+	}
 	
 	//分页
 	$scope.findPage=function(page,rows){			
@@ -30,6 +44,8 @@ app.controller('itemCatController' ,function($scope,$controller   ,itemCatServic
 			}
 		);				
 	}
+
+    $scope.parentId=0;//上级ID
 	
 	//保存 
 	$scope.save=function(){				
@@ -37,13 +53,14 @@ app.controller('itemCatController' ,function($scope,$controller   ,itemCatServic
 		if($scope.entity.id!=null){//如果有ID
 			serviceObject=itemCatService.update( $scope.entity ); //修改  
 		}else{
+            $scope.entity.parentId=$scope.parentId;//赋予上级ID
 			serviceObject=itemCatService.add( $scope.entity  );//增加 
 		}				
 		serviceObject.success(
 			function(response){
 				if(response.flag){
 					//重新查询 
-		        	$scope.reloadList();//重新加载
+                    $scope.findByParentId($scope.parentId);//重新加载
 				}else{
 					alert(response.message);
 				}
@@ -79,9 +96,12 @@ app.controller('itemCatController' ,function($scope,$controller   ,itemCatServic
 	
 	// 根据父ID查询分类
 	$scope.findByParentId =function(parentId){
-		itemCatService.findByParentId(parentId).success(function(response){
-			$scope.list=response;
-		});
+        $scope.parentId=parentId;//记住上级ID
+		$scope.searchEntity.parentId = parentId;
+        $scope.reloadList();// 重新加载列表
+		// itemCatService.findByParentId(parentId).success(function(response){
+		// 	$scope.list=response;
+		// });
 	}
 	
 	// 定义一个变量记录当前是第几级分类

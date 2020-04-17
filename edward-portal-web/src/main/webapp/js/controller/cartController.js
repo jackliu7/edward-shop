@@ -45,10 +45,18 @@ app.controller('cartController',function($scope,cartService,loginService,address
 	//添加收货地址
 	$scope.addAddress=function(){
         $scope.newAddress.userId = $scope.loginName;
-		addressService.add($scope.newAddress).success(
+        var serviceObject;//服务层对象
+        if ($scope.newAddress.id == null){
+            serviceObject = addressService.add($scope.newAddress);
+		} else {
+            serviceObject =  addressService.update($scope.newAddress);
+		}
+        serviceObject.success(
 			function (response) {
 				if (response.success){
+                    $scope.newAddress={};
                     $scope.findAddressList();
+                    alert(response.message);
 				}else {
                     alert(response.message);
 				}
@@ -56,6 +64,34 @@ app.controller('cartController',function($scope,cartService,loginService,address
             }
 		);
 	}
+    $scope.addNew=function(){
+        $scope.newAddress={};
+    }
+	//删除地址
+	$scope.remove = function(id){
+		addressService.delete(id).success(
+			function (response) {
+				if (response.success){
+                    $scope.findAddressList();
+                    alert(response.message);
+				} else {
+                    alert(response.message);
+				}
+            }
+		);
+	}
+    //查询单个地址
+    $scope.findOne = function(id){
+        addressService.findOne(id).success(
+            function (response) {
+                if (response){
+                    $scope.newAddress=response;
+                } else {
+                    alert(response.message);
+                }
+            }
+        );
+    }
 	
 	//选择地址
 	$scope.selectAddress=function(address){

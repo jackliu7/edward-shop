@@ -2,6 +2,7 @@ package com.edward.cart.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.edward.pojo.TbOrder;
+import com.edward.pojo.group.OrderVo;
 import com.edward.service.OrderService;
 import entity.PageResult;
 import entity.Result;
@@ -29,8 +30,10 @@ public class OrderController {
 	 * @return
 	 */
 	@RequestMapping("/findAll")
-	public List<TbOrder> findAll(){
-		return orderService.findAll();
+	public List<OrderVo> findUserOrder(String status){
+		//获取当前登录人账号
+		String username = SecurityContextHolder.getContext().getAuthentication().getName();
+		return orderService.findUserOrder(username,status);
 	}
 	
 	
@@ -89,6 +92,23 @@ public class OrderController {
 	@RequestMapping("/findOne")
 	public TbOrder findOne(Long id){
 		return orderService.findOne(id);		
+	}
+
+	/**
+	 * 删除订单明细
+	 * @param orderId
+	 * @param orderItemId
+	 * @return
+	 */
+	@RequestMapping("/delOrderItem")
+	public Result delOrderItem(Long orderId,Long orderItemId){
+		try {
+			orderService.delOrderItem(orderId,orderItemId);
+			return new Result(true, "删除成功");
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new Result(false, "删除失败");
+		}
 	}
 	
 	/**

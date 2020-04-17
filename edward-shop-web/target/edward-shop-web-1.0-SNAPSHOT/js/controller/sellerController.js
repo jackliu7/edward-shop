@@ -64,6 +64,30 @@ app.controller('sellerController' ,function($scope,$controller   ,sellerService)
 			}		
 		);	
 	}
+
+    $scope.update = function(){
+        sellerService.update( $scope.loginUser  ).success(
+            function(response){
+                if(response.flag){
+                    alert(response.message);
+                }else{
+                    alert(response.message);
+                }
+            }
+        );
+    }
+	//修改密码
+    $scope.changePwd = function(){
+        sellerService.changePwd( $scope.loginUser  ).success(
+            function(response){
+                if(response.flag){
+                    alert(response.message);
+                }else{
+                    alert(response.message);
+                }
+            }
+        );
+    }
 	
 	 
 	//批量删除 
@@ -90,5 +114,16 @@ app.controller('sellerController' ,function($scope,$controller   ,sellerService)
 			}			
 		);
 	}
+
+	//获取登录用户
+	$scope.getLoginUser=function () {
+		sellerService.getLoginUser().success(
+			function (response) {
+				response.password = "";
+                $scope.loginUser = response;
+
+            }
+		)
+    }
     
 });	
