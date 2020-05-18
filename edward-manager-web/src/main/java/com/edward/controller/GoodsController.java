@@ -11,6 +11,7 @@ import com.edward.pojo.TbGoods;
 import com.edward.pojo.TbItem;
 import com.edward.pojo.group.Goods;
 import com.edward.service.GoodsService;
+import com.edward.service.ItemSearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
@@ -162,6 +163,8 @@ public class GoodsController {
 	
 	@Autowired
 	private Destination topicPageDestination;//用于生成商品详细页的消息目标(发布订阅)
+
+
 	
 	@RequestMapping("/updateStatus")
 	public Result updateStatus(Long[] ids,String status){

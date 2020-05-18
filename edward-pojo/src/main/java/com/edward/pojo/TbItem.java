@@ -60,12 +60,13 @@ public class TbItem implements Serializable{
     @Field("item_brand")
     private String brand;
 
+
     private String spec;
 
     @Field("item_seller")
     private String seller;
-    
-   
+
+
     @Dynamic
     @Field("item_spec_*")
     private Map<String,String> specMap;

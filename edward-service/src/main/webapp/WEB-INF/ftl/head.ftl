@@ -54,7 +54,7 @@
 						<div class="fr shopcar">
 							<div class="show-shopcar" id="shopcar">
 								<span class="car"></span>
-								<a class="sui-btn btn-default btn-xlarge" href="http://localhost:9103/cart.html">
+								<a class="sui-btn btn-default btn-xlarge" href="http://edward.com/cart.html">
 									<span>我的购物车</span>
 								</a>
 

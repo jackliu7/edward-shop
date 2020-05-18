@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5780b109-f23d-4821-b14a-ecab4a4301b4" name="Default" comment="" />
+    <list default="true" id="5780b109-f23d-4821-b14a-ecab4a4301b4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/ShopOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edward-shop-web/src/main/java/com/edward/shop/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/controller/orderController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/service/orderService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-common/src/main/java/util/SendMessageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/edward-common/src/main/java/util/SendMessageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-common/target/classes/util/SendMessageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-common/target/classes/util/SendMessageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-common/target/edward-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/edward-common/target/edward-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/src/main/java/com/edward/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/src/main/java/com/edward/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/src/main/resources/fastDFS/fdfs_client.conf" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/src/main/resources/fastDFS/fdfs_client.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/seller.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/seller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/seller_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/seller_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/target/classes/com/edward/controller/GoodsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-manager-web/target/classes/fastDFS/fdfs_client.conf" beforeDir="false" afterPath="$PROJECT_DIR$/edward-manager-web/target/classes/fastDFS/fdfs_client.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-pojo/target/classes/com/edward/pojo/TbItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-pojo/target/classes/com/edward/pojo/TbItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-pojo/target/edward-pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/edward-pojo/target/edward-pojo-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/edward-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/edward-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/java/com/edward/cart/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/java/com/edward/cart/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/resources/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/resources/spring/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-pay.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-pay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-receive.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-receive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-send.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-send.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-setting-address.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-setting-address.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/contentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/contentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/orderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/orderController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/service/orderService.js" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/service/orderService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/src/main/webapp/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/target/classes/com/edward/cart/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/target/classes/com/edward/cart/controller/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-portal-web/target/classes/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edward-portal-web/target/classes/spring/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service-interface/src/main/java/com/edward/service/ItemSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service-interface/src/main/java/com/edward/service/ItemSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service-interface/src/main/java/com/edward/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service-interface/src/main/java/com/edward/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service-interface/target/classes/com/edward/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service-interface/target/classes/com/edward/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service-interface/target/edward-service-interface-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service-interface/target/edward-service-interface-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ItemSearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ItemSearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service/src/main/resources/properties/page.properties" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service/src/main/resources/properties/page.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service/src/main/webapp/WEB-INF/ftl/head.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service/src/main/webapp/WEB-INF/ftl/head.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service/target/classes/com/edward/service/impl/ItemSearchServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service/target/classes/com/edward/service/impl/ItemSearchServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service/target/classes/com/edward/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service/target/classes/com/edward/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-service/target/classes/properties/page.properties" beforeDir="false" afterPath="$PROJECT_DIR$/edward-service/target/classes/properties/page.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/goods_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/goods_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/newOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/newOrder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-shop-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/edward-shop-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edward-shop-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/edward-shop-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/edward-dao/target/" />
@@ -41,7 +100,22 @@
     <favorites_list name="edward-parent" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="uploadService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/service/uploadService.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/java/com/edward/shop/controller/UploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-132">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,39 +127,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>findBySpecList</find>
-      <find>Service</find>
-      <find>searchObjectByKey</find>
-      <find>返回</find>
-      <find>updateStatus</find>
-      <find>updateSelection</find>
-      <find>今日</find>
-      <find>轮播</find>
-      <find>2</find>
-      <find>炫龙毁灭者</find>
-      <find>我的</find>
-      <find>更多</find>
-      <find>爱德华首发</find>
-      <find>service</find>
-      <find>logoarea</find>
-      <find>结算</find>
-      <find>address</find>
-      <find>武汉</find>
-      <find>购物车</find>
-      <find>姓名</find>
-      <find>退出</find>
-      <find>miche</find>
-      <find>添加</find>
-      <find>新增</find>
-      <find>删除</find>
       <find>秒杀</find>
       <find>btn</find>
-      <find>品优购</find>
       <find>品优购商城</find>
       <find>爱德华商城</find>
+      <find>localhost:9105</find>
+      <find>System.out.println</find>
+      <find>deta</find>
+      <find>我的</find>
+      <find>我的购物车</find>
+      <find>localhost</find>
+      <find>品优购</find>
+      <find>$scope.order</find>
+      <find>order</find>
+      <find>查询</find>
+      <find>search</find>
+      <find>upda</find>
+      <find>img</find>
+      <find>我有</find>
+      <find>findOne</find>
+      <find>$scope.entity.goodsDesc.specificationItems</find>
+      <find>spec</find>
+      <find>审核</find>
+      <find>scope.entity</find>
+      <find>delete</find>
+      <find>sol</find>
+      <find>solr</find>
+      <find>传智</find>
+      <find>checkAttributeValue</find>
+      <find>updateSpecAttribute</find>
+      <find>修改</find>
     </findStrings>
     <replaceStrings>
       <replace>loginUser.sellerId</replace>
+      <replace>localhost</replace>
       <replace>爱德华</replace>
     </replaceStrings>
   </component>
@@ -102,57 +177,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/specification.html" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/item_cat.html" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/controller/itemCatController.js" />
-        <option value="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ItemCatServiceImpl.java" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/goods.html" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/java/com/edward/controller/TypeTemplateController.java" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/controller/typeTemplateController.js" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/service/typeTemplateService.js" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/service/itemService.js" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/controller/baseController.js" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/goods_edit.html" />
-        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/controller/goodsController.js" />
-        <option value="$PROJECT_DIR$/edward-user-web/src/main/java/com/edward/user/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/edward-portal-web/pom.xml" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/edward-goods-detail/src/main/webapp/js/controller/itemController.js" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/index_login.html" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/resources/spring/spring-security.xml" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/contentController.js" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/resources/spring/springmvc.xml" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/searchController.js" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/search_login.html" />
-        <option value="$PROJECT_DIR$/edward-common/pom.xml" />
-        <option value="$PROJECT_DIR$/edward-common/src/main/java/util/SendMessageUtil.java" />
-        <option value="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/userController.js" />
         <option value="$PROJECT_DIR$/edward-service/src/main/webapp/WEB-INF/ftl/foot.ftl" />
         <option value="$PROJECT_DIR$/edward-service/src/main/webapp/WEB-INF/ftl/item.ftl" />
         <option value="$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/OrderVo.java" />
         <option value="$PROJECT_DIR$/edward-dao/src/main/java/com/edward/mapper/TbOrderItemMapper.java" />
         <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/service/addressService.js" />
         <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/cartController.js" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/cart.html" />
         <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/getOrderInfo.html" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/register.html" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/search.html" />
-        <option value="$PROJECT_DIR$/edward-service/src/main/webapp/WEB-INF/ftl/head.ftl" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-setting-address.html" />
-        <option value="$PROJECT_DIR$/edward-service-interface/src/main/java/com/edward/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-index.html" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/service/orderService.js" />
         <option value="$PROJECT_DIR$/edward-portal-web/src/main/java/com/edward/cart/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/edward-common/src/main/java/util/IdWorker.java" />
         <option value="$PROJECT_DIR$/edward-common/src/test/java/test/Test1.java" />
         <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/pay.html" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-setting-address.html" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/index_login.html" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/java/com/edward/cart/controller/CartController.java" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/resources/spring/spring-security.xml" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/contentController.js" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/cart.html" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/search.html" />
+        <option value="$PROJECT_DIR$/edward-service/src/main/webapp/WEB-INF/ftl/head.ftl" />
+        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/seller_1.html" />
+        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/seller.html" />
+        <option value="$PROJECT_DIR$/edward-manager-web/src/main/resources/fastDFS/fdfs_client.conf" />
+        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/home.html" />
+        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/content.html" />
+        <option value="$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/index.html" />
+        <option value="$PROJECT_DIR$/edward-common/src/main/java/util/SendMessageUtil.java" />
+        <option value="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/home.html" />
+        <option value="$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/ShopOrder.java" />
+        <option value="$PROJECT_DIR$/edward-service-interface/src/main/java/com/edward/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/edward-shop-web/src/main/java/com/edward/shop/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/service/orderService.js" />
+        <option value="$PROJECT_DIR$/edward-service/src/main/resources/properties/page.properties" />
+        <option value="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/orders.html" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/userController.js" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/register.html" />
+        <option value="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/goods_edit.html" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/service/orderService.js" />
+        <option value="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/H.java" />
+        <option value="$PROJECT_DIR$/edward-manager-web/src/main/java/com/edward/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ItemSearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/edward-service-interface/src/main/java/com/edward/service/ItemSearchService.java" />
+        <option value="$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbItem.java" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/orderController.js" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-index.html" />
         <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-pay.html" />
         <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-receive.html" />
         <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-send.html" />
-        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/orderController.js" />
+        <option value="$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/newOrder.html" />
+        <option value="$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/controller/orderController.js" />
+        <option value="$PROJECT_DIR$/edward-portal-web/src/main/webapp/index.html" />
       </list>
     </option>
   </component>
@@ -178,7 +253,23 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="edward-portal-web Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="edward-portal-web Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="edward-portal-web Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="tomcat7" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -200,6 +291,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,17 +301,96 @@
               <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edward" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edward" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edward-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edward-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="edward-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="searchObjectByKey&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="登录&#9;null&#9;null&#10;searchObjectByKey&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/netty" />
@@ -230,14 +403,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.edward.shop.controller" />
       <recent name="com.edward.user.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\edward\edward-parent\edward-shop-web\src\main\webapp\admin" />
+      <recent name="E:\edward\edward-parent\edward-shop-web\src\main\webapp\js\controller" />
+      <recent name="E:\edward\edward-parent\edward-shop-web\src\main\webapp\js\service" />
       <recent name="E:\edward\edward-parent\edward-portal-web\src\main\webapp" />
       <recent name="E:\edward\edward-parent\edward-portal-web\src\main\webapp\js\controller" />
-      <recent name="E:\edward\edward-parent\edward-portal-web\src\main\webapp\js\service" />
-      <recent name="E:\edward\edward-parent\edward-portal-web\src\main\webapp\img" />
-      <recent name="E:\edward\edward-parent\edward-portal-web\src\main\java\com\edward\user\controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -257,7 +431,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IdWorker">
+  <component name="RunManager" selected="Application.H">
+    <configuration name="H" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.edward.service.impl.H" />
+      <module name="edward-service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edward.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="IdWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.IdWorker" />
       <module name="edward-common" />
@@ -336,11 +521,13 @@
       <item itemvalue="Application.UserServiceImpl" />
       <item itemvalue="Application.SendMessageUtil" />
       <item itemvalue="Application.IdWorker" />
+      <item itemvalue="Application.H" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IdWorker" />
+        <item itemvalue="Application.H" />
         <item itemvalue="Application.SendMessageUtil" />
+        <item itemvalue="Application.IdWorker" />
         <item itemvalue="Application.UserServiceImpl" />
       </list>
     </recent_temporary>
@@ -373,6 +560,17 @@
       <workItem from="1584578989097" duration="21230000" />
       <workItem from="1587093845671" duration="460000" />
       <workItem from="1587094372632" duration="16057000" />
+      <workItem from="1587186415905" duration="11024000" />
+      <workItem from="1587290417362" duration="5610000" />
+      <workItem from="1587357350366" duration="11321000" />
+      <workItem from="1587436960756" duration="21489000" />
+      <workItem from="1587522834715" duration="20217000" />
+      <workItem from="1587646317023" duration="6669000" />
+      <workItem from="1587692827143" duration="8065000" />
+      <workItem from="1587867340644" duration="589000" />
+      <workItem from="1588643657199" duration="1948000" />
+      <workItem from="1588992668450" duration="5962000" />
+      <workItem from="1589067806249" duration="2308000" />
     </task>
     <task id="LOCAL-00001" summary="合并了前台模块">
       <created>1584407190643</created>
@@ -399,7 +597,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201302000" />
+    <option name="totallyTimeSpent" value="296504000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -425,23 +623,23 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.31443298" />
-      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4977307" weight="0.23327616" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Run Dashboard" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="4" sideWeight="0.6921331" visible="true" weight="0.51890033" />
-      <window_info anchor="bottom" x="22" y="268" width="1322" height="192" id="Run" order="10" sideWeight="0.5461422" weight="0.15979381" />
-      <window_info anchor="bottom" id="Spring" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.6921331" weight="0.52577317" />
+      <window_info anchor="bottom" x="22" y="268" width="1322" height="192" id="Run" order="10" sideWeight="0.5461422" weight="0.3161512" />
+      <window_info anchor="bottom" id="Spring" order="1" weight="0.3298969" />
       <window_info anchor="bottom" id="Terminal" order="6" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.6030928" visible="true" weight="0.2677761" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.6030928" visible="true" weight="0.23600605" />
       <window_info id="Web" order="0" sideWeight="0.3969072" side_tool="true" weight="0.11422088" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="4" sideWeight="0.3969072" side_tool="true" weight="0.19969743" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4977307" weight="0.23327616" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="8" />
@@ -485,395 +683,344 @@
     <MESSAGE value="增加了订单删除" />
     <option name="LAST_COMMIT_MESSAGE" value="增加了订单删除" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/java/com/edward/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1232">
-          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1715">
-          <caret line="86" column="15" lean-forward="true" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-service/src/main/webapp/WEB-INF/ftl/foot.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1484">
-          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-service/src/main/webapp/WEB-INF/ftl/item.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1088">
-          <caret line="108" column="20" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/service/userService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="5" selection-start-line="11" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/CartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2739">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/Goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/Specification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/OrderVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/GoodsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3138">
-          <caret line="212" column="23" lean-forward="true" selection-start-line="212" selection-start-column="23" selection-end-line="212" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-dao/src/main/java/com/edward/mapper/TbOrderItemMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/goods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1848" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbOrderExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/java/com/edward/cart/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-orderDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/controller/goodsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/service/addressService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/java/com/edward/cart/controller/AddressController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/cart_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-evaluate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2508" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/paysuccess.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-setting-safe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/getOrderInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="43" column="106" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="26" column="106" selection-start-line="26" selection-start-column="106" selection-end-line="26" selection-end-column="106" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="201">
+          <caret line="30" column="111" selection-start-line="30" selection-start-column="111" selection-end-line="30" selection-end-column="111" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/search_login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-service/src/main/webapp/WEB-INF/ftl/head.ftl">
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/service/goodsService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="27" column="129" selection-start-line="27" selection-start-column="129" selection-end-line="27" selection-end-column="129" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="506">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/search.html">
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/service/orderService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="54" column="116" selection-start-line="54" selection-start-column="80" selection-end-line="54" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-setting-address.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="105" column="22" lean-forward="true" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/css/webbase.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="37" column="120880" selection-start-line="37" selection-start-column="120877" selection-end-line="37" selection-end-column="120880" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbOrderItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-service-interface/src/main/java/com/edward/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        <state relative-caret-position="308">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/service/orderService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-common/src/test/java/test/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="286">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/java/com/edward/cart/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+        <state relative-caret-position="-1100">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3564" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/java/com/edward/portal/controller/ItemSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/searchController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/Specification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/goods.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-440">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-manager-web/src/main/java/com/edward/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/controller/itemController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/goods_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5053">
+          <caret line="263" column="22" lean-forward="true" selection-start-line="263" selection-start-column="22" selection-end-line="263" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/controller/goodsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2706" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/H.java" />
+    <entry file="file://$PROJECT_DIR$/edward-manager-web/src/main/java/com/edward/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service-interface/src/main/java/com/edward/service/ItemSearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1943">
+          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="98" column="39" lean-forward="true" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
+        <state relative-caret-position="-1276">
+          <caret line="198" column="7" lean-forward="true" selection-start-line="198" selection-start-column="7" selection-end-line="198" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edward-common/src/main/java/util/IdWorker.java">
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ItemSearchListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="42" column="12" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/pay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="203" column="59" selection-start-line="203" selection-start-column="59" selection-end-line="203" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-send.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="221" column="185" selection-start-line="221" selection-start-column="185" selection-end-line="221" selection-end-column="185" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#3;n#ul#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-receive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="221" column="185" selection-start-line="221" selection-start-column="185" selection-end-line="221" selection-end-column="185" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#3;n#ul#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-pay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="222" lean-forward="true" selection-start-line="222" selection-end-line="222" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#3;n#ul#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="220" column="185" selection-start-line="219" selection-start-column="56" selection-end-line="220" selection-end-column="185" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#3;n#ul#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/userController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="-44">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/orderController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state relative-caret-position="180">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/js/controller/cartController.js">
+    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="78" column="17" lean-forward="true" selection-start-line="73" selection-start-column="16" selection-end-line="78" selection-end-column="17" />
+        <state relative-caret-position="154">
+          <caret line="190" column="136" lean-forward="true" selection-start-line="190" selection-start-column="136" selection-end-line="190" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="189" column="133" selection-start-line="189" selection-start-column="133" selection-end-line="189" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-receive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="188" column="61" lean-forward="true" selection-start-line="188" selection-start-column="61" selection-end-line="188" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/home-order-send.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="189" column="133" selection-start-line="189" selection-start-column="133" selection-end-line="189" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/newOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1694">
+          <caret line="77" column="85" selection-start-line="77" selection-start-column="85" selection-end-line="77" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/java/com/edward/shop/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/TbGoodsDesc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-manager-web/src/main/webapp/admin/specification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-start-column="20" selection-end-line="134" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/controller/specificationOptionController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1254" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-manager-web/src/main/webapp/js/controller/specificationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/SpecificationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/GoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ContentCategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ContentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="135" column="40" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-solr/1.5.5.RELEASE/spring-data-solr-1.5.5.RELEASE.jar!/org/springframework/data/solr/core/query/HighlightQuery.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ItemSearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2509">
+          <caret line="224" column="29" lean-forward="true" selection-start-line="224" selection-start-column="29" selection-end-line="224" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-pojo/src/main/java/com/edward/pojo/group/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="38" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/ItemPageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/CartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-portal-web/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="782" column="37" lean-forward="true" selection-start-line="782" selection-start-column="37" selection-end-line="782" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-service/src/main/java/com/edward/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="104" column="120" selection-start-line="104" selection-start-column="118" selection-end-line="104" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/controller/orderController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/admin/goods_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="206" column="50" lean-forward="true" selection-start-line="206" selection-start-column="50" selection-end-line="206" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/controller/goodsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-common/src/main/java/util/FastDFSClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/webapp/js/service/uploadService.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edward-shop-web/src/main/java/com/edward/shop/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -65,10 +65,10 @@ public class CartController {
 	}
 	
 	@RequestMapping("/addGoodsToCartList")
-	@CrossOrigin(origins="http://localhost:9105")
+	@CrossOrigin(origins={"http://edward.com"})
 	public Result addGoodsToCartList(Long itemId,Integer num){
 		
-		//response.setHeader("Access-Control-Allow-Origin", "http://localhost:9105");//可以访问的域(当此方法不需要操作cookie)
+		//response.setHeader("Access-Control-Allow-Origin", "http://edward.com:9105");//可以访问的域(当此方法不需要操作cookie)
 		//response.setHeader("Access-Control-Allow-Credentials", "true");//如果操作cookie，必须加上这句话
 		
 		//当前登录人账号

@@ -35,5 +35,34 @@ app.controller('orderController',function($scope,loginService,orderService){
 		)
     }
 
+    $scope.updateEntity = {};
+    //更新
+    $scope.update = function(orderId,sta){
+        $scope.updateEntity.status = sta;
+        $scope.updateEntity.orderId = orderId;
+        orderService.update($scope.updateEntity).success(
+            function(response){
+                alert("收货成功")
+               location.reload();
+            }
+        );
+    }
+
+    //更新
+    $scope.pay = function(orderId,sta){
+        $scope.updateEntity.status = sta;
+        $scope.updateEntity.orderId = orderId;
+        orderService.update($scope.updateEntity).success(
+            function(response){
+                alert("付款成功");
+                location.reload();
+            }
+        );
+    }
+
+    $scope.warm = function () {
+	    alert("已提醒商家发货");
+    }
+
 
 });

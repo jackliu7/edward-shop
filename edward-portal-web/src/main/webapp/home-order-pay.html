@@ -78,7 +78,7 @@
 						<div class="fr shopcar">
 							<div class="show-shopcar" id="shopcar">
 								<span class="car"></span>
-								<a class="sui-btn btn-default btn-xlarge" href="cart.html" target="_blank">
+								<a class="sui-btn btn-default btn-xlarge" href="cart.html" >
 									<span>我的购物车</span>
 								</a>
 							</div>
@@ -173,7 +173,7 @@ $(function(){
                                         <th width="5%">数量</th>
                                         <th width="10%">实付款</th>
                                         <th width="10%">交易状态</th>
-                                        <th width="10%">交易操作</th>
+                                        <!--<th width="10%">交易操作</th>-->
                                     </thead>
                                 </tr>
                             </table>
@@ -186,13 +186,20 @@ $(function(){
                                         <label data-toggle="checkbox" class="checkbox-pretty ">
                                                <input type="checkbox" checked="checked"><span>{{order.order.createTime}}　订单编号：{{order.order.orderId}} </span>
                                          </label>
+										<ul class="unstyled">
+											<li style="float: right; margin-left: 5px" ng-if="order.order.status==1"><a ng-click="pay(order.order.orderId,2)" class="sui-btn btn-info">立即付款</a></li>
+											<li style="float: right; margin-left: 5px" ng-if="order.order.status==2"><a ng-click="warm()" class="sui-btn btn-info">提醒发货</a></li>
+											<li style="float: right; margin-left: 5px" ng-if="order.order.status==3"><a ng-click="update(order.order.orderId,4)" class="sui-btn btn-info">确认收货</a></li>
+											<li style="float: right; margin-left: 5px" ng-if="order.order.status==4"><a  class="sui-btn btn-info">订单完成</a></li>
+											<li style="float: right; margin-left: 5px" ng-if="order.order.status!=4" ng-click="delete(order.order.orderId,orderItem.id,0)"><a href="javascript:void(0);"  class="sui-btn btn-danger">取消订单</a></li>
+										</ul>
                                     </div>
                                     <table class="sui-table table-bordered order-datatable">
                                         <tbody>
                                             <tr ng-repeat="orderItem in order.orderItemList">
                                                 <td width="35%">
-                                                    <div class="typographic"><img src="{{orderItem.picPath}}" />
-                                                        <a href="http://localhost:9105/{{orderItem.goodsId}}.html" class="block-text">{{orderItem.title}}</a>
+                                                    <div class="typographic"><a href="http://edward.com/detail/{{orderItem.goodsId}}.html"><img style="height: 50px;" src="{{orderItem.picPath}}" /></a>
+                                                        {{orderItem.title}}
                                                     </div>
                                                 </td>
                                                 <td width="5%" class="center">
@@ -213,16 +220,16 @@ $(function(){
                                                         <li>{{status[order.order.status]}}</li>
                                                     </ul>
                                                 </td>
-                                                <td width="10%" class="center">
-                                                    <ul class="unstyled">
-                                                        <li ng-if="order.order.status==1"><a href="#" class="sui-btn btn-info">立即付款</a></li>
-                                                        <li ng-if="order.order.status==2"><a href="#" class="sui-btn btn-info">提醒发货</a></li>
-                                                        <li ng-if="order.order.status==3"><a href="#" class="sui-btn btn-info">查看物流</a></li>
-														<li style="margin-top: -13px;">&nbsp;</li>
-														<li ng-click="delete(order.order.orderId,orderItem.id,0)"><a href="javascript:void(0);"  class="sui-btn btn-danger">取消订单</a></li>
+                                                <!--<td width="10%" class="center">-->
+                                                    <!--<ul class="unstyled">-->
+                                                        <!--<li ng-if="order.order.status==1"><a href="#" class="sui-btn btn-info">立即付款</a></li>-->
+                                                        <!--<li ng-if="order.order.status==2"><a href="#" class="sui-btn btn-info">提醒发货</a></li>-->
+                                                        <!--<li ng-if="order.order.status==3"><a href="#" class="sui-btn btn-info">查看物流</a></li>-->
+														<!--<li style="margin-top: -13px;">&nbsp;</li>-->
+														<!--<li ng-click="delete(order.order.orderId,orderItem.id,1)"><a href="javascript:void(0);"  class="sui-btn btn-danger">取消订单</a></li>-->
 
-                                                    </ul>
-                                                </td>
+                                                    <!--</ul>-->
+                                                <!--</td>-->
                                             </tr>
                                         </tbody>
                                     </table>

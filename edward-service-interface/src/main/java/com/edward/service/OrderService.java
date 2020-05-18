@@ -3,6 +3,7 @@ import java.util.List;
 
 import com.edward.pojo.TbOrder;
 import com.edward.pojo.group.OrderVo;
+import com.edward.pojo.group.ShopOrder;
 import entity.PageResult;
 /**
  * 服务层接口
@@ -16,6 +17,14 @@ public interface OrderService {
 	 * @return
 	 */
 	public List<OrderVo> findUserOrder(String username,String status);
+
+	/**
+	 * 返回店铺订单
+	 * @return
+	 */
+	public List<ShopOrder> findShopOrder(String sellerId, String status);
+
+	public List<ShopOrder> search(String sellerId,TbOrder order);
 	
 	
 	/**

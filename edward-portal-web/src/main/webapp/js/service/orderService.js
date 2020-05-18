@@ -8,8 +8,12 @@ app.service('orderService',function($http){
 	this.delete=function(orderId,orderItemId){
 		return $http.get('order/delOrderItem.do?orderId='+orderId+'&orderItemId='+orderItemId);
 	}
-	
+    //修改
+    this.update=function(entity){
+        return  $http.post('order/update.do',entity );
+    }
 
-	
-	
+
+
+
 });

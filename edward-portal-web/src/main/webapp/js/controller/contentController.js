@@ -9,7 +9,7 @@ app.controller("contentController",function($scope,contentService,loginService){
 	
 	//搜索  （传递参数）
 	$scope.search=function(){
-		location.href="http://localhost:9103/search.html#?keywords="+$scope.keywords;
+        window.location.href="http://edward.com/search.html#?keywords="+$scope.keywords;
 	}
 
     $scope.loginName = "";

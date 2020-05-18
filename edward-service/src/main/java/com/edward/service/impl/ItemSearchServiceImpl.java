@@ -245,6 +245,11 @@ public class ItemSearchServiceImpl implements ItemSearchService {
 	}
 
 
+
+
+
+
+
 	@Override
 	public void deleteByGoodsIds(List goodsIds) {
 				

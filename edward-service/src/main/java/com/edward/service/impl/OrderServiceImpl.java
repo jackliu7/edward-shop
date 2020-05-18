@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.edward.mapper.TbItemMapper;
 import com.edward.mapper.TbOrderItemMapper;
 import com.edward.mapper.TbOrderMapper;
 import com.edward.pojo.*;
 import com.edward.pojo.group.Cart;
 import com.edward.pojo.group.OrderVo;
+import com.edward.pojo.group.ShopOrder;
 import com.edward.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -51,7 +53,6 @@ public class OrderServiceImpl implements OrderService {
 		List<TbOrder> orderList = orderMapper.selectByExample(example);//用户所有的订单
 		//根据订单查询每个订单明细
 		for (TbOrder order : orderList){
-			System.out.println(order.getOrderId());
 			OrderVo orderVo = new OrderVo();
 			orderVo.setOrder(order);
 			TbOrderItemExample tbOrderItemExample = new TbOrderItemExample();
@@ -64,6 +65,69 @@ public class OrderServiceImpl implements OrderService {
 		return result;
 	}
 
+	/**
+	 * 查询店铺订单
+	 * @param sellerId
+	 * @param status
+	 * @return
+	 */
+	@Override
+	public List<ShopOrder> findShopOrder(String sellerId, String status) {
+		List<ShopOrder> result = new ArrayList<ShopOrder>();
+		TbOrderExample example=new TbOrderExample();
+		TbOrderExample.Criteria criteria = example.createCriteria();
+		criteria.andSellerIdEqualTo(sellerId);
+		if (!"0".equals(status)){
+			criteria.andStatusEqualTo(status);
+		}
+		List<TbOrder> orderList = orderMapper.selectByExample(example);//店铺所有的订单
+		//根据订单查询每个订单明细
+		for (TbOrder order : orderList){
+			TbOrderItemExample tbOrderItemExample = new TbOrderItemExample();
+			TbOrderItemExample.Criteria itemExampleCriteria = tbOrderItemExample.createCriteria();
+			itemExampleCriteria.andOrderIdEqualTo(order.getOrderId());
+			List<TbOrderItem> orderItemList = orderItemMapper.selectByExample(tbOrderItemExample);
+			for (TbOrderItem orderItem : orderItemList){
+				TbOrder order1 = new TbOrder();
+				order1.setOrderId(order.getOrderId());
+				order1.setReceiver(order.getReceiver());
+				order1.setReceiverAreaName(order.getReceiverAreaName());
+				order1.setReceiverMobile(order.getReceiverMobile());
+				order1.setStatus(order.getStatus());
+				ShopOrder shopOrder = new ShopOrder();
+				shopOrder.setOrder(order1);
+				shopOrder.setOrderItem(orderItem);
+				result.add(shopOrder);
+			}
+		}
+		return result;
+	}
+
+	@Override
+	public List<ShopOrder> search(String sellerId,TbOrder order) {
+		List<ShopOrder> result = new ArrayList<ShopOrder>();
+		TbOrderExample example=new TbOrderExample();
+		TbOrderExample.Criteria criteria = example.createCriteria();
+		criteria.andSellerIdEqualTo(sellerId);
+		if (order != null && order.getOrderId()!=null){
+			criteria.andOrderIdEqualTo(order.getOrderId());
+		}
+		List<TbOrder> orderList = orderMapper.selectByExample(example);//店铺所有的订单
+		//根据订单查询每个订单明细
+		for (TbOrder order1 : orderList){
+			TbOrderItemExample tbOrderItemExample = new TbOrderItemExample();
+			TbOrderItemExample.Criteria itemExampleCriteria = tbOrderItemExample.createCriteria();
+			itemExampleCriteria.andOrderIdEqualTo(order1.getOrderId());
+			List<TbOrderItem> orderItemList = orderItemMapper.selectByExample(tbOrderItemExample);
+			for (TbOrderItem orderItem : orderItemList){
+				ShopOrder shopOrder = new ShopOrder();
+				shopOrder.setOrder(order1);
+				shopOrder.setOrderItem(orderItem);
+				result.add(shopOrder);
+			}
+		}
+		return result;
+	}
 
 
 	/**
@@ -81,6 +145,8 @@ public class OrderServiceImpl implements OrderService {
 	
 	@Autowired
 	private IdWorker idWorker;
+
+
 	
 
 	
@@ -107,15 +173,16 @@ public class OrderServiceImpl implements OrderService {
 			tbOrder.setReceiverMobile(order.getReceiverMobile());//收货人电话
 			tbOrder.setReceiver(order.getReceiver());//收货人
 			tbOrder.setSourceType(order.getSourceType());//订单来源
-			tbOrder.setSellerId(order.getSellerId());//商家ID
+			tbOrder.setSellerId(cart.getSellerId());//商家ID
 			
 			double money=0;//合计数
 			//循环购物车中每条明细记录
 			for(TbOrderItem orderItem:cart.getOrderItemList()  ){
+
 				orderItem.setId(idWorker.nextId());//主键
 				orderItem.setOrderId(orderId);//订单编号
 				orderItem.setSellerId(cart.getSellerId());//商家ID
-				orderItemMapper.insert(orderItem);				
+				orderItemMapper.insert(orderItem);
 				money+=orderItem.getTotalFee().doubleValue();
 			}
 			
@@ -134,7 +201,9 @@ public class OrderServiceImpl implements OrderService {
 	 */
 	@Override
 	public void update(TbOrder order){
-		orderMapper.updateByPrimaryKey(order);
+		TbOrder order1 = orderMapper.selectByPrimaryKey(order.getOrderId());
+		order1.setStatus(order.getStatus());
+		orderMapper.updateByPrimaryKey(order1);
 	}	
 	
 	/**

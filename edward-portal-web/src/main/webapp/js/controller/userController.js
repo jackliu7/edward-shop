@@ -15,7 +15,7 @@ app.controller('userController' ,function($scope,$controller   ,userService){
 		userService.add($scope.entity,$scope.smscode).success(
 			function(response){
 				if (response.success) {
-                    location.href='index_login.html';
+                    window.location.href='http://edward.com:9100/cas/login?service=http://edward.com';
 				} else {
                     alert(response.message);
 				}

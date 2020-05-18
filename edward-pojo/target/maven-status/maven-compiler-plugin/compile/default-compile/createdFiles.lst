@@ -10,6 +10,7 @@ com\edward\pojo\TbUserExample$Criteria.class
 com\edward\pojo\TbSpecification.class
 com\edward\pojo\TbSpecificationExample.class
 com\edward\pojo\TbTypeTemplateExample$Criterion.class
+com\edward\pojo\group\ShopOrder.class
 com\edward\pojo\TbGoodsDescExample$Criterion.class
 com\edward\pojo\TbContentCategoryExample.class
 com\edward\pojo\TbAddressExample$Criterion.class
